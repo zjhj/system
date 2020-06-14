@@ -1,2 +1,5 @@
 # system
-os and some platforms
+
+## [linux相关](linux/)
+
+## windows相关
