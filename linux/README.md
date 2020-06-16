@@ -45,3 +45,9 @@ linux文件状态有三个时间参数：atime、mtime、ctime，可以使用sta
 | -mtime n | n为数字，意思为在n天之前的一天之内被更改过内容的文件 |
 | -mtime +n | 列出在n天之前（不含n天本身）被更改过内容的文件名     |
 | -mtime -n | 列出在n天之内（含n天本身）被更改过内容的文件名       |
+
+## CONVERT
+图形转换命令，修改为400*600，不按原比例缩放的命令行格式：
+```
+convert -resize 400x600! img_8398.jpg hj.jpg
+```
