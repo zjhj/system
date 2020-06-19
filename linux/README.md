@@ -1,3 +1,7 @@
+## Shell相关
+显示二进制文件导致屏幕乱码，可以输入`tput sgr0`恢复。
+测试屏幕乱码：`echo -e '\xe'`，恢复也可以使用：`echo -e '\xf'`。
+
 ## X
 系统安装时，如果没有装X，后续可以使用如下方式：
 ```
@@ -13,7 +17,7 @@ apt-get install gcc-multilib g++-multilib module-assistant
 ```
 
 ## VI
-常用配置：
+常用配置（~/vimrc）：
 ```
 set nocompatible
 set backspace=indent,eol,start
@@ -21,6 +25,7 @@ set ai
 set tabstop=4
 set encoding=utf-8
 ```
+进入16进制编辑模式：`%!xxd`，恢复使用：`%!xxd -r`，保存修改需要恢复后再保存。
 
 ## PROC FS
 进程号与/proc下的目录对应，其中文件用途：
