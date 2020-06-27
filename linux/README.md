@@ -52,6 +52,9 @@ linux文件状态有三个时间参数：atime、mtime、ctime，可以使用sta
 | -mtime +n | 列出在n天之前（不含n天本身）被更改过内容的文件名     |
 | -mtime -n | 列出在n天之内（含n天本身）被更改过内容的文件名       |
 
+### 改名
+根据inode查找修改（6417为通过ls -li看到的inode号）：`find . -inum 6417 -exec mv {} 1.rar \;`<br>
+
 ### 命令执行
 通过find根据inode来删除文件：
 ```
