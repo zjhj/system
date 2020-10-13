@@ -71,6 +71,10 @@ linux文件状态有三个时间参数：atime、mtime、ctime，可以使用sta
 find . -inum 264744 -exec rm -i  {} \;
 ```
 
+### 查找suid、guid
+- suid: `find . -perm /4000 -print`
+- sgid: `find . -perm /2000 -print`
+
 ## CONVERT
 图形转换命令，修改为400*600，不按原比例缩放的命令行格式：
 ```
