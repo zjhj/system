@@ -11,6 +11,12 @@ systemctl set-default graphical.target
 init 5
 ```
 
+### vncserver
+重启指令：`systemctl restart vncserver@:1.service`
+
+## KVM
+virsh用于管理虚拟机，destroy用于强制重启。
+
 ## GCC
 64位系统通过-m32编译32位应用，安装以下库：
 ```
