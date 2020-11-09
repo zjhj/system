@@ -29,6 +29,11 @@ systemctl set-default graphical.target
 init 5
 ```
 
+### 虚拟Xserver
+- 安装xfvb
+- Xvfb :2 -screen 0 800x600x24 2> /dev/null &
+- export DISPLAY=:2.0
+
 ### vncserver
 重启指令：`systemctl restart vncserver@:1.service`
 
