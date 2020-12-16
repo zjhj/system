@@ -104,6 +104,10 @@ find . -inum 264744 -exec rm -i  {} \;
 - suid: `find . -perm /4000 -print`
 - sgid: `find . -perm /2000 -print`
 
+### 查找包含指定内容的文件
+- find /usr -type f | xargs grep "ElfW(Rela)"   
+- 也可以使用`grep -r -l "ElfW(Rela)" glibc*`的形式进行查找
+
 ## CONVERT
 图形转换命令，修改为400*600，不按原比例缩放的命令行格式：
 ```
