@@ -10,6 +10,8 @@
 
 ## GitHub
 - 大文件提交出现异常情况（比如`remote: fatal error in commit_refs`），可以通过`git gc`解决（有说需要在前面加`git fsck`）
+- 设置socks代理：`git config --global http.proxy socks5://10.0.2.2:12808`
+- 查看配置信息：`git config --global -l`
 
 ## JRE
 JNLP连接远程控制端时，出现网络连接中断的提示，有可能是安全配置问题，可以尝试修改JRE的lib\security目录下的java.security文件，屏蔽jdk.tls.disabledAlgorithms=SSLv3...的相关内容即可。
